@@ -22,3 +22,7 @@ Create a new app in the project
 docker-compose run --rm app sh -c "python manage.py startapp home"
 ```
 
+Update docker-compose.yml with environment variables
+```bash
+vim docker-compose.yml
+```
