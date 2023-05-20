@@ -1,6 +1,6 @@
 FROM certbot/certbot:v1.27.0
 
-COPY certity-init.sh /opt/
+COPY certify-init.sh /opt/
 RUN chmod +x /opt/certity-init.sh
 
 ENTRYPOINT []

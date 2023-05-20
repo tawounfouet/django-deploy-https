@@ -80,3 +80,16 @@ rm -rf folder_name
 
 # Generate the SSL initial certificates
 docker-compose -f docker-compose.deploy.yml run --rm certbot /opt/certify-init.sh
+
+
+cp .env.sample .env
+
+vi .env
+
+DJANGO_SECRET_KEY=realsecretkeyaodazkndazqsd,ad144688766
+ACME_CHALLENGE=thomas.awounfouet@gmaiL.com
+DOMAIN=app.awf-digital.com
+
+# Rename a folder
+mv old_folder_name new_folder_name
+mv cerbot/ certbot/
