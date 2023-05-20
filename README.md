@@ -12,3 +12,13 @@ docker-compose run -rm app sh -c "django-admin startproject app ."
 ```
 
 Run docker-compose up
+-  "-d" runs the container in the background
+```bash
+docker-compose up -d
+```
+
+Create a new app in the project
+```bash
+docker-compose run --rm app sh -c "python manage.py startapp home"
+```
+
